@@ -26,7 +26,7 @@ def extract_labels(file, nested=False):
             return file["annotations"].apply(safe_extract).map({"Truck": 1, "No Truck": 0, "Trucks": 1, "No Trucks": 0})
 
 # Load files using corrected paths
-file1 = pd.read_json(r'C:\Users\yugde\Downloads\project-1-at-2025-01-26-22-13-cfdf2f2c.json')
+file1 = pd.read_json(r'C:\Users\yugde\Downloads\project-2.json')
 file2 = pd.read_json(r'C:\Users\yugde\Downloads\cv final anno.json')
 file3 = pd.read_json(r'C:\Users\yugde\Downloads\project-3-at-2025-01-26-22-12-ec898b7c.json')
 
